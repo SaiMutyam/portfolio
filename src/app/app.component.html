@@ -1,0 +1,97 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  #mySidenav a {
+    position:absolute;
+    left: -56px;
+    transition: 0.3s;
+    padding: 9px;
+    width: 135px;
+    text-decoration:double;
+    font-size: 20px;
+    color: black;
+    border-radius: 0 5px 5px 0;
+  }
+
+
+  #mySidenav a:hover {
+    left: 0;
+  }
+
+  #profile{
+    top: 20px;
+    background-color: #04AA6D;
+  }
+
+  #acd {
+    top: 80px;
+    background-color: #2196F3;
+  }
+
+  #cert {
+    top: 140px;
+    background-color: #a8e1e9;
+  }
+
+  #proj {
+    top: 200px;
+    background-color: #eb8181
+  }
+  #con {
+    top: 265px;
+    background-color: #ac5feb;
+  }
+
+  * {
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.container .content {
+  /* position: absolute; */
+  text-align: center;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #110f0f;
+  width: 100%;
+  padding: 20px;
+}
+
+
+  </style>
+  </head>
+
+
+  <body>
+    
+  <div id="mySidenav" class="sidenav">
+    <a href="#" routerLink="/portfolio/certifications" id= "cert" class="btn btn-dark">Certifications</a>
+    <a href="#" routerLink="/portfolio/profile" id= "profile" class="btn btn-dark">Profile</a>
+    <a href="#" routerLink="/portfolio/academic" id= "acd" class="btn btn-danger">Education</a>
+    <a href="#" routerLink="/portfolio/projects" id= "proj" class="btn btn-dark">Projects</a>
+    <a href="#" routerLink="/portfolio/contact" id= "con" class="btn btn-dark">Contact Me</a>
+
+
+  </div>
+
+
+
+  <div style="margin-left:200px;">
+
+
+
+    <router-outlet></router-outlet>
+
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+   </body>
+
+   </html>
